@@ -1,0 +1,21 @@
+[2019-04-01 11:34:48] [info] Start Program:
+Path:"C:\Users\Maria\source\repos\Lab1-SDA - Copy\Debug\Lab1-SDA.exe"
+Arguments:
+Working directory: "C:\Users\Maria\source\repos\Lab1-SDA - Copy\Lab1-SDA\"
+Modules: Selected: C:\Users\Maria\source\repos\Lab1-SDA - Copy\Debug\Lab1-SDA.exe Excluded: 
+Sources: Selected: C:\Users\Maria\source\repos\Lab1-SDA - Copy\Lab1-SDA Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Maria\AppData\Local\Temp\cgnf4qof.h4b 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2019-04-01 11:34:48] [info] Module: C:\Users\Maria\source\repos\Lab1-SDA - Copy\Debug\Lab1-SDA.exe is selected because it matches selected pattern: C:\Users\Maria\source\repos\Lab1-SDA - Copy\Debug\Lab1-SDA.exe
+[2019-04-01 11:34:51] [info] ----------------------------------------------------
+[2019-04-01 11:34:51] [info] Coverage binary generated in file: C:\Users\Maria\AppData\Local\Temp\cgnf4qof.h4b
+[2019-04-01 11:34:51] [info] ----------------------------------------------------
