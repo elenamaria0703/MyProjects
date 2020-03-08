@@ -1,0 +1,31 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#e67300,#ffb84d );
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#comboReports{
+    -fx-text-fill: white;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#ff704d,#ffb84d );
+}
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #804000;
+}
+.table-row-cell:selected {
+    -fx-background-color: #ffdb4d;
+
+}
+.list-cell
+{
+    -fx-font: 15pt "Arial";
+}
+.table-row-cell:selected .text {
+    -fx-fill: #ffffff;
+}
+#anchor{
+    -fx-background-color: linear-gradient( #ffd699, #ffad33);
+}

@@ -1,0 +1,5 @@
+﻿1,Scoala Gimnaziala "Horea"
+2,Scoala Gimnaziala "Octavian Goga"
+3,Liceul Teoretic "Lucian Blaga"
+4,Scoala Gimnaziala "Ioan Bob"
+5,Scoala Gimnaziala "Ion Creanga"

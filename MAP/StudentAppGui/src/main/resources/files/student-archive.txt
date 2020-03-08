@@ -1,0 +1,6 @@
+2;Chis;Antonia;225;ctir2509@scs.ubbcluj.ro;Sergiu
+4;Popovici;Tudor;226;ptir2509@scs.ubbcluj.ro;Andrei
+10;Farcas;Giulia;226;fgir2507@scs.ubbcluj.ro;Gabi
+8;Bals;Eric;225;beir2509@scs.ubbcluj.ro;Adriana
+14;Judea;George;225;jgir2501@scs.ubbcluj.ro;Andrei
+13;Dibart;Vanesa;225;dvir2511@scs.ubbcluj.ro;Gabi

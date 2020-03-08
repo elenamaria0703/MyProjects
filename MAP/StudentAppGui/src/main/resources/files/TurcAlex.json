@@ -1,0 +1,37 @@
+[
+  {
+    "Tema": "3",
+    "Predata in saptamana": "10",
+    "Feedback": "mai trebuie sa lucrei la validarile\ndin service",
+    "Deadline": "9",
+    "Nota": "8"
+  },
+  {
+    "Tema": "4",
+    "Predata in saptamana": "10",
+    "Feedback": "arata foarte bine partea de gui",
+    "Deadline": "10",
+    "Nota": "10"
+  },
+  {
+    "Tema": "5",
+    "Predata in saptamana": "11",
+    "Feedback": "nu trebuie sa afisezi toate atributele",
+    "Deadline": "11",
+    "Nota": "9"
+  },
+  {
+    "Tema": "6",
+    "Predata in saptamana": "14",
+    "Feedback": "ai uitat cateva cazuri de testare\nin rest e foarte bine",
+    "Deadline": "12",
+    "Nota": "8"
+  },
+  {
+    "Tema": "7",
+    "Predata in saptamana": "13",
+    "Feedback": "foarte bine",
+    "Deadline": "13",
+    "Nota": "10"
+  }
+]

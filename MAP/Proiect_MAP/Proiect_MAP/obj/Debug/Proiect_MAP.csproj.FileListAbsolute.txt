@@ -1,0 +1,7 @@
+C:\Users\Maria\source\repos\Proiect_MAP\Proiect_MAP\bin\Debug\Proiect_MAP.exe.config
+C:\Users\Maria\source\repos\Proiect_MAP\Proiect_MAP\bin\Debug\Proiect_MAP.exe
+C:\Users\Maria\source\repos\Proiect_MAP\Proiect_MAP\bin\Debug\Proiect_MAP.pdb
+C:\Users\Maria\source\repos\Proiect_MAP\Proiect_MAP\obj\Debug\Proiect_MAP.csprojAssemblyReference.cache
+C:\Users\Maria\source\repos\Proiect_MAP\Proiect_MAP\obj\Debug\Proiect_MAP.csproj.CoreCompileInputs.cache
+C:\Users\Maria\source\repos\Proiect_MAP\Proiect_MAP\obj\Debug\Proiect_MAP.exe
+C:\Users\Maria\source\repos\Proiect_MAP\Proiect_MAP\obj\Debug\Proiect_MAP.pdb

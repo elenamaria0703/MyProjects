@@ -1,0 +1,37 @@
+[
+  {
+    "Tema": "2",
+    "Predata in saptamana": "8",
+    "Feedback": " foarte bine",
+    "Deadline": "8",
+    "Nota": "10"
+  },
+  {
+    "Tema": "1",
+    "Predata in saptamana": "8",
+    "Feedback": " foarte bine",
+    "Deadline": "7",
+    "Nota": "9"
+  },
+  {
+    "Tema": "3",
+    "Predata in saptamana": "10",
+    "Feedback": " foarte bine",
+    "Deadline": "9",
+    "Nota": "9"
+  },
+  {
+    "Tema": "4",
+    "Predata in saptamana": "12",
+    "Feedback": "mai citeste teoria",
+    "Deadline": "10",
+    "Nota": "4"
+  },
+  {
+    "Tema": "5",
+    "Predata in saptamana": "11",
+    "Feedback": "te descurci mai bine",
+    "Deadline": "11",
+    "Nota": "9"
+  }
+]

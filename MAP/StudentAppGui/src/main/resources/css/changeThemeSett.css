@@ -1,0 +1,16 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#b37700,  #b35900);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #804000;
+}
+
+#anchor{
+    -fx-background-color: linear-gradient( #ffd699, #ffad33);
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "Profesor": "Andrei",
+    "Tema": "2",
+    "Predata in saptamana": "9",
+    "Feedback": " repository trebuie sa fie Singleton",
+    "Deadline": "8",
+    "Nota": "8",
+    "Student": "3"
+  },
+  {
+    "Profesor": "Sergiu",
+    "Tema": "1",
+    "Predata in saptamana": "7",
+    "Feedback": " foarte bine",
+    "Deadline": "7",
+    "Nota": "10",
+    "Student": "1"
+  },
+  {
+    "Profesor": "Sergiu",
+    "Tema": "1",
+    "Predata in saptamana": "7",
+    "Feedback": " bine",
+    "Deadline": "7",
+    "Nota": "9",
+    "Student": "3"
+  },
+  {
+    "Profesor": "Sergiu",
+    "Tema": "1",
+    "Predata in saptamana": "8",
+    "Feedback": " buna idea cu definirea metodei statice",
+    "Deadline": "7",
+    "Nota": "9",
+    "Student": "5"
+  }
+]

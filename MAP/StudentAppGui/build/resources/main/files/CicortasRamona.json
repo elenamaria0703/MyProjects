@@ -1,0 +1,23 @@
+[
+  {
+    "Tema": "3",
+    "Predata in saptamana": "10",
+    "Feedback": "ar fi mai eficient daca  ai folosi DTO",
+    "Deadline": "9",
+    "Nota": "8"
+  },
+  {
+    "Tema": "4",
+    "Predata in saptamana": "12",
+    "Feedback": "mai ai de lucrat",
+    "Deadline": "10",
+    "Nota": "4"
+  },
+  {
+    "Tema": "5",
+    "Predata in saptamana": "12",
+    "Feedback": "aproape bine",
+    "Deadline": "11",
+    "Nota": "8"
+  }
+]

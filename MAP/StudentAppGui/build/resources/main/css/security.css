@@ -1,0 +1,21 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#8080ff, #8080ff);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.label {
+    -fx-font-size: 17px;
+    -fx-text-fill: #304f50;
+}
+
+/*#anchor{*/
+/*    -fx-background-color: linear-gradient( #70dbdb, #8080ff);*/
+/*}*/
+#anchor{
+    -fx-background-color: linear-gradient( 	 #a3c2c2, #c2c2a3);
+}
+#txtPassword{
+    -fx-background-color: linear-gradient(  #d9e6f2, #c2d6d6);
+}

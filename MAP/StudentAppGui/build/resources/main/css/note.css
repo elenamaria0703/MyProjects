@@ -1,0 +1,24 @@
+#btnAddGr {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient( #132639, #8cb3d9);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btnBack{
+    -fx-background-color: linear-gradient( #e6f7ff, #568d8f);
+}
+#comboHomeWork{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient( 	 #b3cce6,  #94b8b8);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.label {
+    -fx-font-size: 17px;
+    -fx-text-fill: #304f50;
+}
+#anchor{
+    -fx-background-color: linear-gradient( 	 #a3c2c2, #c2c2a3);
+}

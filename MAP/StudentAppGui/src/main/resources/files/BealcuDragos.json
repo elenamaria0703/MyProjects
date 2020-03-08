@@ -1,0 +1,58 @@
+[
+  {
+    "Tema": "1",
+    "Predata in saptamana": "7",
+    "Feedback": " bine",
+    "Deadline": "7",
+    "Nota": "9"
+  },
+  {
+    "Tema": "2",
+    "Predata in saptamana": "9",
+    "Feedback": " repository trebuie sa fie Singleton",
+    "Deadline": "8",
+    "Nota": "8"
+  },
+  {
+    "Tema": "3",
+    "Predata in saptamana": "10",
+    "Feedback": "ai refacut foarte bine partea de service",
+    "Deadline": "9",
+    "Nota": "9"
+  },
+  {
+    "Tema": "4",
+    "Predata in saptamana": "12",
+    "Feedback": "reciteste cusurile",
+    "Deadline": "10",
+    "Nota": "4"
+  },
+  {
+    "Tema": "5",
+    "Predata in saptamana": "12",
+    "Feedback": "te descurci mai bine",
+    "Deadline": "11",
+    "Nota": "8"
+  },
+  {
+    "Tema": "6",
+    "Predata in saptamana": "13",
+    "Feedback": "foarte bine",
+    "Deadline": "12",
+    "Nota": "10"
+  },
+  {
+    "Tema": "7",
+    "Predata in saptamana": "14",
+    "Feedback": "ai reusit foarte bine sa refactorizezi \ncodul",
+    "Deadline": "13",
+    "Nota": "9"
+  },
+  {
+    "Tema": "8",
+    "Predata in saptamana": "14",
+    "Feedback": "felicitari",
+    "Deadline": "14",
+    "Nota": "10"
+  }
+]

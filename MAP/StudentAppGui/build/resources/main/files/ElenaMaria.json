@@ -1,0 +1,44 @@
+[
+  {
+    "Tema": "1",
+    "Predata in saptamana": "7",
+    "Feedback": " foarte bine",
+    "Deadline": "7",
+    "Nota": "10"
+  },
+  {
+    "Tema": "2",
+    "Predata in saptamana": "10",
+    "Feedback": "ai putea sa modifici clasa\nde repo pentru mai multa claritate",
+    "Deadline": "8",
+    "Nota": "8"
+  },
+  {
+    "Tema": "3",
+    "Predata in saptamana": "10",
+    "Feedback": "bravo",
+    "Deadline": "9",
+    "Nota": "9"
+  },
+  {
+    "Tema": "5",
+    "Predata in saptamana": "12",
+    "Feedback": "foarte bine",
+    "Deadline": "11",
+    "Nota": "9"
+  },
+  {
+    "Tema": "4",
+    "Predata in saptamana": "11",
+    "Feedback": "ai mai putea sa te uiti peste\nbaza de date",
+    "Deadline": "10",
+    "Nota": "9"
+  },
+  {
+    "Tema": "6",
+    "Predata in saptamana": "13",
+    "Feedback": "nu ai fost atenta la indicatie",
+    "Deadline": "12",
+    "Nota": "7"
+  }
+]

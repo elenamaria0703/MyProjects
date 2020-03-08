@@ -1,0 +1,23 @@
+[
+  {
+    "Tema": "2",
+    "Predata in saptamana": "9",
+    "Feedback": "insuficiente teste",
+    "Deadline": "8",
+    "Nota": "8"
+  },
+  {
+    "Tema": "3",
+    "Predata in saptamana": "10",
+    "Feedback": "felicitari pentru gui",
+    "Deadline": "9",
+    "Nota": "9"
+  },
+  {
+    "Tema": "6",
+    "Predata in saptamana": "14",
+    "Feedback": "mai ai de lucrat la interfata grafica",
+    "Deadline": "12",
+    "Nota": "6"
+  }
+]

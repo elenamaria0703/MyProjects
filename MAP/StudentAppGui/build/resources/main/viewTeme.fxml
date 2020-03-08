@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="anchor" prefHeight="700.0" prefWidth="900.0"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TemeController">
+   <children>
+      <TableView fx:id="tableTeme" layoutX="17.0" layoutY="8.0" prefHeight="609.0" prefWidth="480.0">
+        <columns>
+            <TableColumn fx:id="columnId" prefWidth="36.0" text="Id" />
+          <TableColumn fx:id="columnDescription" prefWidth="168.0" text="Description" />
+          <TableColumn fx:id="columnStartWeek" prefWidth="134.0" text="StartWeek" />
+            <TableColumn fx:id="columnDeadline" prefWidth="141.0" text="Deadline" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtDescription" layoutX="525.0" layoutY="446.0" />
+      <Label layoutX="711.0" layoutY="449.0" text="Description" />
+      <TextField fx:id="txtDeadline" layoutX="525.0" layoutY="491.0" />
+      <Label layoutX="711.0" layoutY="494.0" text="DeadlineWeek" />
+      <TextField fx:id="txtSearch" layoutX="601.0" layoutY="585.0" prefHeight="31.0" prefWidth="228.0" />
+      <Button layoutX="775.0" layoutY="648.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="31.0" prefWidth="96.0" text="Back" />
+      <Button layoutX="511.0" layoutY="539.0" mnemonicParsing="false" onAction="#handleUpdateTema" prefHeight="31.0" prefWidth="108.0" text="Update" />
+      <ImageView fitHeight="356.0" fitWidth="255.0" layoutX="549.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../MAP/Homeworks.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="646.0" layoutY="539.0" mnemonicParsing="false" onAction="#handleAddTema" prefHeight="31.0" prefWidth="108.0" text="Add" />
+      <Button layoutX="625.0" layoutY="386.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="31.0" prefWidth="76.0" text="Clear" />
+      <Label layoutX="523.0" layoutY="590.0" text="Search" />
+      <ProgressBar fx:id="progressBar" layoutX="23.0" layoutY="638.0" prefHeight="26.0" prefWidth="228.0" progress="0.0" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="269.0" layoutY="631.0" prefHeight="52.0" prefWidth="53.0" progress="0.0" />
+      <Text fx:id="stateTxt" layoutX="333.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="107.99999088048935" />
+   </children>
+</AnchorPane>

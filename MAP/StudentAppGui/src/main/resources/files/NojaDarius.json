@@ -1,0 +1,30 @@
+[
+  {
+    "Tema": "2",
+    "Predata in saptamana": "9",
+    "Feedback": "functia din consola ar putea fi\ndivzata pentru eficienta",
+    "Deadline": "8",
+    "Nota": "8"
+  },
+  {
+    "Tema": "3",
+    "Predata in saptamana": "10",
+    "Feedback": "nu ai verificate toate cazurile de testare",
+    "Deadline": "9",
+    "Nota": "8"
+  },
+  {
+    "Tema": "5",
+    "Predata in saptamana": "12",
+    "Feedback": "iti lipsesc cateva teste",
+    "Deadline": "11",
+    "Nota": "8"
+  },
+  {
+    "Tema": "6",
+    "Predata in saptamana": "13",
+    "Feedback": "nu te-ai ocupat de toate \nfunctionalitatile",
+    "Deadline": "12",
+    "Nota": "6"
+  }
+]

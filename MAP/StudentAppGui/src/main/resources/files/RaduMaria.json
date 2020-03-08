@@ -1,0 +1,37 @@
+[
+  {
+    "Tema": "1",
+    "Predata in saptamana": "8",
+    "Feedback": " buna idea cu definirea metodei statice",
+    "Deadline": "7",
+    "Nota": "9"
+  },
+  {
+    "Tema": "2",
+    "Predata in saptamana": "9",
+    "Feedback": " foarte bine",
+    "Deadline": "8",
+    "Nota": "9"
+  },
+  {
+    "Tema": "3",
+    "Predata in saptamana": "9",
+    "Feedback": "arata foarte bine interfata grafica",
+    "Deadline": "9",
+    "Nota": "10"
+  },
+  {
+    "Tema": "4",
+    "Predata in saptamana": "11",
+    "Feedback": "ai nevoie de mai multa documentatie",
+    "Deadline": "10",
+    "Nota": "4"
+  },
+  {
+    "Tema": "4",
+    "Predata in saptamana": "11",
+    "Feedback": "felicitari pentru proiect",
+    "Deadline": "10",
+    "Nota": "10"
+  }
+]

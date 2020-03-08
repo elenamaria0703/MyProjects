@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="11db3d7b-b69b-4e48-a671-efd3b4cad49c" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="StudentAppGui" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1U1bHZA3rutSiVcNZcG8YXrkQwu" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sem13.concurrency" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maria\Desktop\StudentAppGui\src\main\resources" />
+      <recent name="C:\Users\Maria\Desktop\StudentAppGui\src\main\resources\files" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maria\Desktop\StudentAppGui\src\main\resources" />
+      <recent name="C:\Users\Maria\Desktop\MAP\StudentAppGui\src\main\resources" />
+      <recent name="C:\Users\Maria\Desktop\MAP\StudentAppGui\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="ui" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="gui" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="StudentAppGui.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentAppGui [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.StudentAppGui [dependencies]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11db3d7b-b69b-4e48-a671-efd3b4cad49c" name="Default Changelist" comment="" />
+      <created>1574526961470</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574526961470</updated>
+      <workItem from="1574526965774" duration="1673000" />
+      <workItem from="1574528832850" duration="1294000" />
+      <workItem from="1574530162201" duration="35000" />
+      <workItem from="1574675882062" duration="20262000" />
+      <workItem from="1574767451322" duration="452000" />
+      <workItem from="1574768186077" duration="8550000" />
+      <workItem from="1574836506686" duration="12076000" />
+      <workItem from="1575042896090" duration="1448000" />
+      <workItem from="1575134932587" duration="1892000" />
+      <workItem from="1575142307686" duration="7066000" />
+      <workItem from="1575215259386" duration="3957000" />
+      <workItem from="1575390242360" duration="1459000" />
+      <workItem from="1575477212285" duration="5305000" />
+      <workItem from="1575580309770" duration="2550000" />
+      <workItem from="1575630931225" duration="17452000" />
+      <workItem from="1575655163864" duration="545000" />
+      <workItem from="1576057267171" duration="76000" />
+      <workItem from="1576227511181" duration="22180000" />
+      <workItem from="1576654141060" duration="253000" />
+      <workItem from="1577015328377" duration="4682000" />
+      <workItem from="1577104793151" duration="4791000" />
+      <workItem from="1577355755112" duration="14889000" />
+      <workItem from="1577448995870" duration="7837000" />
+      <workItem from="1577553039846" duration="1831000" />
+      <workItem from="1577615791154" duration="7245000" />
+      <workItem from="1577722938982" duration="771000" />
+      <workItem from="1577787227003" duration="1141000" />
+      <workItem from="1577969684698" duration="440000" />
+      <workItem from="1578464526331" duration="106000" />
+      <workItem from="1578606462534" duration="1705000" />
+      <workItem from="1578674830749" duration="217000" />
+      <workItem from="1579118838687" duration="13838000" />
+      <workItem from="1579169655849" duration="21619000" />
+      <workItem from="1579250550570" duration="12968000" />
+      <workItem from="1579277647775" duration="608000" />
+      <workItem from="1579278644474" duration="20377000" />
+      <workItem from="1579332930924" duration="1533000" />
+      <workItem from="1583218704383" duration="545000" />
+      <workItem from="1583392857540" duration="652000" />
+      <workItem from="1583614652351" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/StudentAppGui$Main.ic" NAME="Main Coverage Results" MODIFIED="1575648073845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

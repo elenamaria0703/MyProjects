@@ -1,0 +1,5 @@
+﻿1,Houston Rockets
+2,Los Angeles Lakers
+3,LA Clippers
+4,Chicago Bulls
+5,Cleveland Cavaliers

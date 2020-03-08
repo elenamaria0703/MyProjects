@@ -1,0 +1,23 @@
+[
+  {
+    "Tema": "2",
+    "Predata in saptamana": "9",
+    "Feedback": " foarte bine",
+    "Deadline": "8",
+    "Nota": "9"
+  },
+  {
+    "Tema": "3",
+    "Predata in saptamana": "10",
+    "Feedback": "funciile din repo ar trebui apelate\nprin service",
+    "Deadline": "9",
+    "Nota": "9"
+  },
+  {
+    "Tema": "4",
+    "Predata in saptamana": "10",
+    "Feedback": "",
+    "Deadline": "10",
+    "Nota": "10"
+  }
+]

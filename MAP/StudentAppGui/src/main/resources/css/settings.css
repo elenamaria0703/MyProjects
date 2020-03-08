@@ -1,0 +1,14 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient( #3d5c5c,  #568d8f );
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: 	 #293d3d;
+}
+#anchor{
+    -fx-background-color: linear-gradient( 	 #a3c2c2, #c2c2a3);
+}

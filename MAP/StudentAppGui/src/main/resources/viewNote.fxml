@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchor" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.NoteController">
+   <children>
+      <Button fx:id="btnBack" layoutX="16.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="41.0" prefWidth="75.0" />
+      <TableView fx:id="tableNote" layoutX="275.0" layoutY="35.0" prefHeight="561.0" prefWidth="583.0">
+        <columns>
+          <TableColumn fx:id="tableColumnTema" prefWidth="59.0" text="Tema" />
+          <TableColumn fx:id="tableColumnSapt" prefWidth="178.0" text="Saptamana Predarii" />
+            <TableColumn fx:id="tableColumnDeadline" prefWidth="105.0" text="Deadline" />
+            <TableColumn fx:id="tableColumnNota" prefWidth="60.0" text="Nota" />
+            <TableColumn fx:id="tableColumnFeedback" prefWidth="180.0" text="Feedback" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="comboHomeWork" layoutX="33.0" layoutY="71.0" prefHeight="41.0" prefWidth="187.0" />
+      <Label layoutX="39.0" layoutY="45.0" text="Homeworks" />
+      <Label layoutX="29.0" layoutY="254.0" text="Teachers Feedback" />
+      <Button fx:id="btnAddGr" layoutX="512.0" layoutY="602.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="41.0" prefWidth="155.0" text="Add" />
+      <TextArea fx:id="txtFeedback" layoutX="30.0" layoutY="287.0" prefHeight="127.0" prefWidth="218.0" />
+      <DatePicker fx:id="datePicker" layoutX="30.0" layoutY="149.0" />
+      <Label layoutX="32.0" layoutY="119.0" text="Date of presentation" />
+      <Label layoutX="33.0" layoutY="186.0" text="Grade" />
+      <TextField fx:id="txtGrade" layoutX="25.0" layoutY="215.0" />
+      <ImageView fitHeight="203.0" fitWidth="163.0" layoutX="10.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../report2.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="checkMotivare" layoutX="169.0" layoutY="485.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="96.0" text="(Motivare)" />
+      <Label layoutX="25.0" layoutY="443.0" text="Profesor" />
+      <ComboBox fx:id="comboProf" layoutX="95.0" layoutY="440.0" prefHeight="31.0" prefWidth="145.0" />
+      <ImageView fitHeight="49.0" fitWidth="62.0" layoutX="29.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../back_Arr.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

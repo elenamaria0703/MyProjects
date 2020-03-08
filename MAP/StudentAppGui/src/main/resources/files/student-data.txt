@@ -1,0 +1,4 @@
+1;Elena;Maria;223;emir2508@scs.ubbcluj.ro;Sergiu
+3;Bealcu;Dragos;224;bdir2510@scs.ubbcluj.ro;Andrei
+5;Radu;Maria;223;rmir2507@scs.ubbcluj.ro;Sergiu
+6;Todos;Bianca;225;tbir2503@scs.ubbcluj.ro;Sergiu

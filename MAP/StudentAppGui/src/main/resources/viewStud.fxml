@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchor" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StudentController">
+   <children>
+      <TableView fx:id="tableStudent" layoutX="5.0" layoutY="35.0" prefHeight="660.0" prefWidth="538.0">
+        <columns>
+            <TableColumn fx:id="tableColumnId" prefWidth="30.0" text="Id" />
+          <TableColumn fx:id="tableColumnNume" prefWidth="58.0" text="Nume" />
+          <TableColumn fx:id="tableColumnPrenume" prefWidth="78.0" text="Prenume" />
+            <TableColumn fx:id="tableColumnGrupa" prefWidth="61.0" text="Grupa" />
+            <TableColumn fx:id="tableColumnEmail" minWidth="0.0" prefWidth="170.0" text="Email" />
+            <TableColumn fx:id="tableColumnCadru" prefWidth="140.0" text="Cadru Didactic" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnUpdate" layoutX="600.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleUpdateStudent" prefHeight="31.0" prefWidth="81.0" text="Update" />
+      <Button fx:id="btnAdd" layoutX="703.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleSaveStudent" prefHeight="31.0" prefWidth="60.0" text="Add" />
+      <Button fx:id="btnDelete" layoutX="788.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleDeleteStudent" prefHeight="31.0" prefWidth="73.0" text="Delete" />
+      <TextField fx:id="txtEmail" layoutX="639.0" layoutY="280.0" prefHeight="31.0" prefWidth="211.0" />
+      <TextField fx:id="txtGrupa" layoutX="639.0" layoutY="229.0" prefHeight="31.0" prefWidth="211.0" />
+      <TextField fx:id="txtPrenume" layoutX="639.0" layoutY="183.0" prefHeight="31.0" prefWidth="211.0" />
+      <TextField fx:id="txtNume" layoutX="639.0" layoutY="132.0" prefHeight="31.0" prefWidth="211.0" />
+      <TextField fx:id="txtProfesor" layoutX="639.0" layoutY="335.0" prefHeight="31.0" prefWidth="211.0" />
+      <TextField fx:id="txtId" layoutX="639.0" layoutY="80.0" prefHeight="31.0" prefWidth="211.0" />
+      <Label layoutX="605.0" layoutY="83.0" text="Id" />
+      <Label graphicTextGap="10.0" layoutX="557.0" layoutY="337.0" prefHeight="26.0" prefWidth="81.0" text="Profesor " />
+      <Label layoutX="584.0" layoutY="282.0" text="Email" />
+      <Label layoutX="582.0" layoutY="231.0" text="Grupa" />
+      <Label layoutX="563.0" layoutY="186.0" text="Prenume" />
+      <Label layoutX="574.0" layoutY="135.0" text="Nume" />
+      <Button fx:id="btnClear" layoutX="752.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleClearAll" prefHeight="31.0" prefWidth="94.0" text="Clear" />
+      <ImageView fitHeight="218.0" fitWidth="288.0" layoutX="624.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../MAP/students.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="-6.0" prefHeight="42.0" prefWidth="254.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeItem" mnemonicParsing="false" onAction="#handleClose" text="Exit" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSettings" text="Settings" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleChangeTheme" text="Change Theme" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Others">
+              <items>
+                <MenuItem fx:id="itemHomework" mnemonicParsing="false" onAction="#handleShowHomeworks" text="Homeworks" />
+                  <MenuItem fx:id="itemGrades" mnemonicParsing="false" onAction="#handleAllGrades" text="All Grades" />
+                  <Menu mnemonicParsing="false" text="Reports">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleShowStudentReports" text="Reports Students" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleShowHomeworkReports" text="Reports Homeworks" />
+                    </items>
+                  </Menu>
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="btnAddGrade" layoutX="676.0" layoutY="436.0" mnemonicParsing="false" onAction="#handleAddGrade" prefHeight="31.0" prefWidth="123.0" text="Grades" />
+      <TextField fx:id="txtSearch" layoutX="338.0" layoutY="4.0" />
+      <Label layoutX="263.0" layoutY="7.0" prefHeight="26.0" prefWidth="60.0" text="Search" />
+   </children>
+</AnchorPane>
