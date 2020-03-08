@@ -1,0 +1,6 @@
+﻿  lab5.cpp
+  lab6.cpp
+c:\users\maria\source\repos\grafuri\grafuri\lab6.cpp(199): warning C4018: '<': signed/unsigned mismatch
+c:\users\maria\source\repos\grafuri\grafuri\lab6.cpp(223): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Grafuri.vcxproj -> C:\Users\Maria\source\repos\Grafuri\Debug\Grafuri.exe
