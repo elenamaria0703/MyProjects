@@ -1,0 +1,4 @@
+﻿  Matrice.cpp
+c:\users\maria\source\repos\lab7-sda\lab7-sda\matrice.cpp(39): warning C4715: 'Matrice::cauta_rec': not all control paths return a value
+c:\users\maria\source\repos\lab7-sda\lab7-sda\matrice.cpp(165): warning C4715: 'Matrice::modifica': not all control paths return a value
+  Lab7-SDA.vcxproj -> C:\Users\Maria\source\repos\Lab7-SDA\Debug\Lab7-SDA.exe
