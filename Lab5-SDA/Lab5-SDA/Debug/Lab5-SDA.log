@@ -1,0 +1,9 @@
+﻿  Heap.cpp
+  main.cpp
+c:\users\maria\source\repos\lab5-sda\lab5-sda\main.cpp(29): warning C4244: 'return': conversion from '__int64' to 'long', possible loss of data
+c:\users\maria\source\repos\lab5-sda\lab5-sda\main.cpp(63): warning C4101: 'ex': unreferenced local variable
+c:\users\maria\source\repos\lab5-sda\lab5-sda\main.cpp(93): warning C4018: '<': signed/unsigned mismatch
+c:\users\maria\source\repos\lab5-sda\lab5-sda\main.cpp(100): warning C4101: 'e': unreferenced local variable
+c:\users\maria\source\repos\lab5-sda\lab5-sda\main.cpp(115): warning C4101: 'e': unreferenced local variable
+  Generating Code...
+  Lab5-SDA.vcxproj -> C:\Users\Maria\source\repos\Lab5-SDA\Debug\Lab5-SDA.exe
