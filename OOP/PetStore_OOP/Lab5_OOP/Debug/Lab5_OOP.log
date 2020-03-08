@@ -1,0 +1,17 @@
+﻿  main.cpp
+c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(32): error C2065: 'element': undeclared identifier
+c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(32): error C3861: 'element': identifier not found
+  c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(32): note: 'element': function declaration must be available as none of the arguments depend on a template parameter
+  c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(41): note: see reference to class template instantiation 'Vector<TElem>' being compiled
+c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(35): error C2065: 'urmator': undeclared identifier
+c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(35): error C3861: 'urmator': identifier not found
+  c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(35): note: 'urmator': function declaration must be available as none of the arguments depend on a template parameter
+  Vector.cpp
+c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(32): error C2065: 'element': undeclared identifier
+c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(32): error C3861: 'element': identifier not found
+  c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(32): note: 'element': function declaration must be available as none of the arguments depend on a template parameter
+  c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(41): note: see reference to class template instantiation 'Vector<TElem>' being compiled
+c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(35): error C2065: 'urmator': undeclared identifier
+c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(35): error C3861: 'urmator': identifier not found
+  c:\users\maria\source\repos\lab5_oop\lab5_oop\vector.h(35): note: 'urmator': function declaration must be available as none of the arguments depend on a template parameter
+  Generating Code...

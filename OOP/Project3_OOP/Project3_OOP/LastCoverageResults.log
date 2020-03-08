@@ -1,0 +1,21 @@
+[2019-03-22 11:40:06] [info] Start Program:
+Path:"C:\Users\Maria\source\repos\Project3_OOP\Debug\Project3_OOP.exe"
+Arguments:
+Working directory: "C:\Users\Maria\source\repos\Project3_OOP\Project3_OOP\"
+Modules: Selected: C:\Users\Maria\source\repos\Project3_OOP\Debug\Project3_OOP.exe Excluded: 
+Sources: Selected: C:\Users\Maria\source\repos\Project3_OOP\Project3_OOP Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Maria\AppData\Local\Temp\5mpktzjb.yzu 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2019-03-22 11:40:06] [info] Module: C:\Users\Maria\source\repos\Project3_OOP\Debug\Project3_OOP.exe is selected because it matches selected pattern: C:\Users\Maria\source\repos\Project3_OOP\Debug\Project3_OOP.exe
+[2019-03-22 11:40:06] [info] ----------------------------------------------------
+[2019-03-22 11:40:06] [info] Coverage binary generated in file: C:\Users\Maria\AppData\Local\Temp\5mpktzjb.yzu
+[2019-03-22 11:40:06] [info] ----------------------------------------------------

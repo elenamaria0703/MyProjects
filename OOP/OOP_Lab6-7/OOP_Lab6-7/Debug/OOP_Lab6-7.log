@@ -1,0 +1,9 @@
+﻿  Activity.cpp
+  main.cpp
+  Repository.cpp
+  Service.cpp
+  Tests.cpp
+  UIConsole.cpp
+  Generating Code...
+c:\users\maria\source\repos\oop_lab6-7\oop_lab6-7\repository.cpp(62): warning C4715: 'Repository::search': not all control paths return a value
+  OOP_Lab6-7.vcxproj -> C:\Users\Maria\source\repos\OOP_Lab6-7\Debug\OOP_Lab6-7.exe

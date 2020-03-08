@@ -1,0 +1,19 @@
+[2019-04-11 20:23:38] [info] Start Program:
+Path:"C:\Users\Maria\source\repos\OOP_Lab6-7\Debug\OOP_Lab6-7.exe"
+Arguments:
+Working directory: "C:\Users\Maria\source\repos\OOP_Lab6-7\OOP_Lab6-7\"
+Modules: Selected: C:\Users\Maria\source\repos\OOP_Lab6-7\Debug\OOP_Lab6-7.exe Excluded: 
+Sources: Selected: C:\Users\Maria\source\repos\OOP_Lab6-7\OOP_Lab6-7 Excluded: UIConsole.cpp UIConsole.h 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Maria\AppData\Local\Temp\ng5dqpjl.ebw 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2019-04-11 20:23:38] [info] Module: C:\Users\Maria\source\repos\OOP_Lab6-7\Debug\OOP_Lab6-7.exe is selected because it matches selected pattern: C:\Users\Maria\source\repos\OOP_Lab6-7\Debug\OOP_Lab6-7.exe
+6-7.exe
