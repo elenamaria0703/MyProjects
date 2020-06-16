@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+  
+  img {
+    height: 300px;
+    width: 500px;
+  }
+  a {
+    background-color: white;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+  text-decoration: underline;
+}
+
+  #slides {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+</style>
+
+
+<ol id="slides">
+    <li class="slide showing"><img src="depp.jpg"><a href="https://www.imdb.com/name/nm0000136/" target="_blank">Johnny Depp</a></li>
+    <li class="slide"><img src="leonardo.jpg"><a href="https://www.imdb.com/name/nm0000138/" target="_blank">Leonardo DiCaprio</a></li>
+    <li class="slide"><img src="brad.jpg"><a href="https://www.imdb.com/name/nm0000093/" target="_blank">Brad Pitt</a></li>
+    <li class="slide"><img src="matt.jpg"><a href="https://www.imdb.com/name/nm0000354/" target="_blank">Matt Damon </a></li>
+</ol>
+<br>
+<button style="height: 30px;width: 100px;margin-left: 110px" onclick="previousSlide()">Previous</button>
+<button style="height: 30px;width: 100px" onclick="nextSlide()">Next</button>
+
+
+<script>
+  var slides = document.querySelectorAll('#slides .slide');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextSlide,2000);
+
+  function nextSlide() {
+      slides[currentSlide].className = 'slide';
+      currentSlide = (currentSlide+1)%slides.length;
+      slides[currentSlide].className = 'slide showing';
+  }
+  function previousSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide-1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
+  function nextSlide(){
+    slides[currentSlide].className = 'slide';
+      currentSlide = (currentSlide+1)%slides.length;
+      slides[currentSlide].className = 'slide showing';
+  }
+
+</script>
+</body>
+</html>

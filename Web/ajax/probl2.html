@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+  #div {
+    border:1px solid black;
+    position: relative;
+    height: 300px;
+    width: 500px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+  }
+</style>
+<div id="div"></div>
+<br>
+<button id="previous" style="height: 30px;width: 100px;margin-left: 110px">Previous</button>
+<button id="next" style="height: 30px;width: 100px">Next</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+ var crtPage=1;
+var nrPages=0;
+ $(document).ready(function(){  
+    if(crtPage==1){
+        $("#previous").prop('disabled', true);
+      }
+    $.get("probl2_nrPages.php", function(data){
+    nrPages=parseInt(data);
+    });
+    $.ajax({
+       type: 'GET',
+       url: 'probl2.php',
+       data: 'page=' + crtPage,
+       success: function(users){
+      $("#div").html(users);
+      if(crtPage+1>nrPages){
+        $("#next").prop('disabled', true);
+      }
+     }
+   }); 
+ });
+
+    
+$("#next").click(function(){
+   $("#previous").prop('disabled', false);
+   crtPage+=1; 
+   $.ajax({
+       type: 'GET',
+       url: 'probl2.php',
+       data: 'page=' + crtPage,
+       success: function(users){
+      $("#div").html(users); 
+      if(crtPage+1>nrPages){
+        $("#next").prop('disabled', true);
+      }
+     }
+   }); 
+});
+
+$("#previous").click(function(){
+   $("#next").prop('disabled', false);
+   crtPage-=1;
+   $.ajax({
+       type: 'GET',
+       url: 'probl2.php',
+       data: 'page=' + crtPage,
+       success: function(users){
+      $("#div").html(users); 
+      if(crtPage-1<1){
+        $("#previous").prop('disabled', true);
+      }
+     }
+   }); 
+});
+
+</script>
+</body>
+</html>
+				

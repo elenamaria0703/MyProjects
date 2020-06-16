@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table cellspacing="0" cellpadding="0" id="myTabel">
+  <thead>
+  <tr>
+    <th>Fructe</th>
+    <th>Pret</th>
+    <th>Cantitate</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Mere</td>
+    <td>4</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Pere</td>
+    <td>3</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>Alune</td>
+    <td>12</td>
+    <td>2</td>
+  <tr>
+    <td>Banane</td>
+    <td>5</td>
+    <td>4</td>
+  </tr>
+  </tbody>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+
+     $(function() {
+         $("#myTabel").tablesorter();
+     });
+
+</script>
+</body>
+</html>

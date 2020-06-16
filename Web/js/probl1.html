@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<select id="fruits" onchange="myFunction(vegetables)" size=10px>
+  <option selected>Fruits</option>
+  <option value="Pear" id="Pear">Pear</option>
+  <option value="Orange" id="Orange">Orange</option>
+  <option value="Apple" id="Apple">Apple</option>
+  <option value="Banana" id="Banana">Banana</option>
+  <option value="Melon" id="Melon">Melon</option>
+</select>
+
+<select id="vegetables" onchange="myFunction(fruits)" size=10px>
+  <option selected>Vegetables</option>
+  <option value="Carrots" id="Carrots">Carrots</option>
+  <option value="Cucumber" id="Cucumber">Cucumber</option>
+  <option value="Broccoli" id="Broccoli">Broccoli</option>
+  <option value="Lettuce" id="Lettuce">Lettuce</option>
+  <option value="Garlic" id="Garlic">Garlic</option>
+</select>
+
+<script>
+	function myFunction(element) {
+  var value = window.event.target.value;
+  var newOption=document.createElement('option');
+  newOption.value=value;
+  newOption.text=value;
+  newOption.id=value;
+  document.getElementById(value).remove();
+  element.add(newOption);
+ }
+
+</script>
+</body>
+</html>

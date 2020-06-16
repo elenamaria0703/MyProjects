@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table id="myTable">
+  <tr>
+    <th id="fructe">Fructe</th>
+    <td>Mere</td>
+    <td>Pere</td>
+    <td>Afine</td>
+    <td>Banane</td>
+  </tr>
+  <tr>
+    <th id="pret">Pret</th>
+    <td>4</td>
+    <td>3</td>
+    <td>12</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <th id="cantitate">Cantitate</th>
+    <td>8</td>
+    <td>6</td>
+    <td>2</td>
+    <td>4</td>
+  </tr>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $('th').click(function(){
+    var cols=[];
+    var poz=0;
+    var str=$(this).text()
+    var nrLin=$("tr").length
+    var nrCol=$("tr > td").length/$("tr").length
+    var myTable=$("#myTable");
+    for(j=0;j<nrCol;j++){
+      var col=[]
+      $("tr").each(function () {
+        col.push($(this).find('td').eq(j).text())
+      });
+      cols.push(col);
+    }
+    var poz=0;
+    $("th").each(function(){
+      if($(this).text()==str)
+        return false
+      poz++
+    });
+    
+    var isnumber=false;
+    if(isNaN(cols[0][poz])== false)
+      isnumber=true;
+    if(isnumber==true){
+      cols.sort(function(l1,l2){return parseInt(l1[poz])-parseInt(l2[poz])});
+    }
+    else{
+      cols.sort(function(l1,l2){
+        if (l1[poz].toLowerCase() < l2[poz].toLowerCase()) {return -1;}
+        if (l1[poz].toLowerCase() > l2[poz].toLowerCase()) {return 1;}
+        return 0;});
+    }
+    $('td').remove()
+    for(i=0;i<cols.length;i++){
+      var j=0;
+      $('tr').each(function(){
+        $(this).append("<td>"+cols[i][j]+"</td")
+        j++
+      });
+    }
+  });
+</script>
+</body>
+</html>

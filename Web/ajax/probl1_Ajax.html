@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title>Problema 1 AJAX</title>
+</head>
+<body>
+<div style="display: inline-block;">Plecare
+<select id="plecare"></select>
+</div>
+
+<div id="sosire">Sosire
+<ul id="orase" ></ul></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $.get("probl1.php",function(data){
+   $("#plecare").append(data)
+  });
+});
+
+$('#plecare').on('change', function() {
+  $.ajax({
+ type: 'GET',
+ url: 'probl1_sosire.php',
+ data: 'oras=' + this.value,
+ success: function(orase){
+ $("#orase").empty().append(orase);
+ }
+ });
+
+});
+</script>
+</body>
+</html>	

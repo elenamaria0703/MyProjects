@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+
+<form method="post" action="probl3.php" style="display: inline-block;">
+Selectati ID: <select id="ids" name="id"></select><br><br>
+Nume: <input type="text" name="nume" id="nume"><br><br>
+Prenume: <input type="text" name="prenume" id="prenume"><br><br>
+Email: <input type="text" name="email" id="email"><br><br>
+<input id="save" type="submit" value="Save">
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+var change=false;
+var prev;
+$(document).ready(function(){
+ $("#save").prop('disabled',true);
+ $("#ids").load("probl3_getId.php");
+});
+
+$("#ids").on('change',function(){
+var id=this.value
+ $("#save").prop('disabled',true);
+ 
+if(change==true){
+ alert('S-au efectuat modificari in formular. Doriti sa salvati modificarile?');
+ $.ajax({
+        url: 'probl3.php',
+        type: 'POST',
+        data: {
+            id: prev,
+            nume: $("#nume").val(),
+            prenume:$("#prenume").val(),
+            email:$("#email").val()
+        },
+        success: function(msg) {
+            alert(msg);
+        }               
+    });
+  change=false;
+}
+$.ajax({
+       type: 'GET',
+       url: 'probl3_autocomplete.php',
+       data: 'id=' + id,
+       success: function(data){
+      var str=data.split(' ');
+      $("#nume").val(str[0]);
+      $("#prenume").val(str[1]);
+      $("#email").val(str[2]);
+     }
+   }); 
+prev=id;
+});
+$('#nume').keyup(function() {
+change=true;
+    $("#save").prop('disabled',false);
+});
+$('#prenume').keyup(function() {
+change=true;
+    $("#save").prop('disabled',false);
+});
+$('#email').keyup(function() {
+change=true;
+    $("#save").prop('disabled',false);
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<form name="myForm" onsubmit="return validateFunction()">
+Name: <input type="text" name="name"><br><br>
+Date of Birth: <input type="text" name="dofb"><br><br>
+Age: <input type="text" name="age"><br><br>
+Email: <input type="text" name="email"><br><br>
+<input type="submit" value="Submit">
+</form>
+
+<script>
+function validateFunction(){
+	init();
+	var name=document.forms["myForm"]["name"].value;
+	var dofb=document.forms["myForm"]["dofb"].value;
+	var age=document.forms["myForm"]["age"].value;
+	var email=document.forms["myForm"]["email"].value;
+	var incomplete=new Array();
+	if(name=="") incomplete.push("name");
+	if(dofb=="") incomplete.push("dofb");
+	if(age=="")incomplete.push("age");
+	if(email=="")incomplete.push("email");
+	var str=" "
+	if(incomplete.length!=0){
+		for(i=0;i<incomplete.length;i++){
+			document.forms["myForm"][incomplete[i]].style.borderColor='red';
+			str+=incomplete[i]+", "
+		}
+		alert("Campurile "+ str + "nu sunt completate");
+		return false;
+	}
+	var incorrect=new Array();
+	if(validateName(name)==false)
+		incorrect.push("name");
+	if(validateDate(dofb) == false)
+		incorrect.push("dofb");
+	if(validateAge(age) == false)
+		incorrect.push("age");
+	if(validateEmail(email) == false)
+		incorrect.push("email");
+	if(incorrect.length!=0){
+		for(i=0;i<incorrect.length;i++){
+			document.forms["myForm"][incorrect[i]].style.borderColor='red';
+			str+=incorrect[i]+", "
+		}
+		alert("Campurile "+ str + "nu sunt corect completate");
+		return false;
+	}
+	alert("Toate campurile au fost corect completate");
+}
+function validateName(name){
+	var pat=/[A-Z][a-z]*/
+	return pat.test(name);
+}
+function validateDate(date){
+	var pat=/[0-2][0-9]\/0[1-9]\/[1-2][0-9][0-9][0-9]/;
+	var pat1=/[0-2][0-9]\/1[0-2]\/[1-2][0-9][0-9][0-9]/;
+	var pat2=/3[0-1]\/0[1-9]\/[1-2][0-9][0-9][0-9]/;
+	var pat3=/3[0-1]\/1[0-2]\/[1-2][0-9][0-9][0-9]/;
+	return (pat.test(date) || pat1.test(date) || pat2.test(date) || pat3.test(date));
+}
+function validateAge(age){
+	var pat=/[1-9][0-9]/
+	return pat.test(age);
+}
+
+function validateEmail(email){
+	var pat=/[a-z]*[0-9]*@yahoo\.com/
+	var pat1=/[a-z]*[0-9]*@gmail\.com/
+	var pat2=/[a-z]*[0-9]*@ubbcluj\.ro/
+	return (pat.test(email) || pat1.test(email) || pat2.test(email));
+}
+function init(){
+	document.forms["myForm"]["name"].style.borderColor=null;
+	document.forms["myForm"]["dofb"].style.borderColor=null;
+	document.forms["myForm"]["age"].style.borderColor=null;
+	document.forms["myForm"]["email"].style.borderColor=null;
+}
+</script>
+</body>
+</html>

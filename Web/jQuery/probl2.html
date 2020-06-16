@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<form name="myForm">
+Name: <input type="text" name="name"><br><br>
+Date of Birth(dd/mm/yyyy): <input type="text" name="dofb"><br><br>
+Age: <input type="text" name="age" id="age"><br><br>
+Email: <input type="text" name="email"><br><br>
+<input type="submit" value="Submit">
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	
+	$("form").submit(function(){
+		$("input[type='text']").each(function(){
+			$(this).css("border-color","white")
+		});
+		var str=""
+		$("input[type='text']").each(function(){
+			if(!$(this).val()){
+				str+=$(this).attr("name")+", "
+				$(this).css("border-color","red")
+			}
+		});
+		if(str!=""){
+			alert("Campurile "+str+"nu sunt completate")
+			//return false
+		}
+                var str1=""
+		if($("input[name='name']").val() && validateName($("input[name='name']").val())==false)
+		{
+			$("input[name='name']").css("border-color","red")
+			str1+=" numele,"
+		}
+		if($("input[name='dofb']").val() && validateDate($("input[name='dofb']").val())==false)
+		{
+			$("input[name='dofb']").css("border-color","red")
+			str1+=" data,"
+		}
+		if($("input[name='age']").val() && validateAge($("input[name='age']").val())==false)
+		{
+			$("input[name='age']").css("border-color","red")
+			str1+=" varsta,"
+		}
+		if($("input[name='email']").val() && validateEmail($("input[name='email']").val())==false)
+		{
+			$("input[name='email']").css("border-color","red")
+			str1+=" email,"
+		}
+		if(str1!=""){
+			alert("Campurile "+str1+"nu sunt completate corect")
+			return false
+		}
+                if(str!="") return false
+		alert("Toate datele sunt valide!")
+	});
+	function validateName(name){
+		var pat=/[A-Z][a-z]*/
+		return pat.test(name);
+	}
+	function validateDate(date){
+		var pat=/[0-2][0-9]\/0[1-9]\/[1-2][0-9][0-9][0-9]/;
+		var pat1=/[0-2][0-9]\/1[0-2]\/[1-2][0-9][0-9][0-9]/;
+		var pat2=/3[0-1]\/0[1-9]\/[1-2][0-9][0-9][0-9]/;
+		var pat3=/3[0-1]\/1[0-2]\/[1-2][0-9][0-9][0-9]/;
+		return (pat.test(date) || pat1.test(date) || pat2.test(date) || pat3.test(date));
+	}
+	function validateAge(age){
+		var pat=/[1-9][0-9]/
+		return pat.test(age);
+	}
+
+	function validateEmail(email){
+		var pat=/[a-z]*[0-9]*@yahoo\.com/
+		var pat1=/[a-z]*[0-9]*@gmail\.com/
+		var pat2=/[a-z]*[0-9]*@ubbcluj\.ro/
+		return (pat.test(email) || pat1.test(email) || pat2.test(email));
+	}
+</script>
+</body>
+</html>
+	

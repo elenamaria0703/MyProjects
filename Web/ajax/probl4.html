@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+}
+
+table, td {
+  border: 1px solid black;
+}
+td{
+	height: 30px;
+	width: 30px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<div id="div1"></div>
+<table>
+  <tr id="_0">
+    <td id="0"></td>
+    <td id="1"></td>
+    <td id="2"></td>
+  </tr>
+  <tr id="_1">
+    <td id="0"></td>
+    <td id="1"></td>
+    <td id="2"></td>
+  </tr>
+  <tr id="_2">
+    <td id="0"></td>
+    <td id="1"></td>
+    <td id="2"></td>
+  </tr>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $("#div1").load("init_probl4.php");
+	});
+var clicked=new Set();
+$('td').click( function() {
+if($("#div1").html()=="Felicitari!	")
+ return;
+var param=$(this).parent().attr('id').split('_')[1]+$(this).attr('id');
+if(clicked.has(param))
+           return;
+       else{
+             $(this).html('X');
+            clicked.add(param);
+}
+      $.ajax({
+        url: 'probl4.php',
+        type: 'POST',
+        data: {
+            i:$(this).parent().attr('id').split('_')[1],
+            j:$(this).attr('id')
+        },
+        success: function(resp) {
+            var str=resp.split(' ');
+            if(str.length==1){
+               $("#div1").html(str);
+               return;
+            }
+            var val=parseInt(str[1])+1;
+            $("#_"+str[0]+" :nth-child("+val.toString()+")").html('O');
+            clicked.add(str[0]+str[1]);
+        }               
+    });
+      
+    });
+</script>
+</body>
+</html>		

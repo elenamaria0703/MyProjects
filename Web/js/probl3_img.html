@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+  #game{
+    border:solid black 1px;
+    width:670px;
+    height: 600px;
+    padding: 20px;
+  }
+  #game > div{
+    background-color: grey;
+    border:solid black 2px;
+    width:90px;
+    height:90px;
+    float: left;
+    margin: 10px;
+    padding: 15px;
+    font-size: 50px;
+    text-align: center;
+  }
+</style>
+
+
+
+<div id="game"></div>
+<button onclick="initGame()" style="width: 100px; height: 30px;margin-top: 10px;background-color: grey;">Start Game</button>
+<script type="text/javascript">
+ 
+ 
+  function initGame(){
+  
+    elements=['jerry.jpg','lady.png','spike.png','tom.png','tuffy.png','uncle.png','baby.png','butchcat.png','jerry.jpg','lady.png','spike.png','tom.png','tuffy.png','uncle.png','baby.png','butchcat.png']
+    values=[]
+    div_ids=[]
+    flipped=0;
+
+    document.getElementById("game").innerHTML="";
+    var str='';
+    shuffle(elements);
+    for(var i=0;i<elements.length;i++){
+     var newdiv=document.createElement('div');
+     newdiv.id=i;
+     newdiv.addEventListener("click",function(){
+      wasFliped(elements[this.id]);
+     });
+     document.getElementById('game').appendChild(newdiv);
+    }
+  }
+
+  function shuffle(args){
+    var i=args.length-1,j,temp
+    while(i>0){
+      j=Math.floor(Math.random()*(i+1));
+      temp=args[j];
+      args[j]=args[i]
+      args[i]=temp
+      i--;
+    }
+  }
+
+
+  function wasFliped(picture){
+    var currentDiv=event.target;
+    if(currentDiv.innerHTML=="" && values.length<2){
+      var urlString = 'url(\'' + picture + '\')';
+      currentDiv.style.backgroundColor='white';
+      currentDiv.style.backgroundImage=urlString;
+      values.push(picture);
+      div_ids.push(currentDiv.id);
+      if(values.length==2){
+        if(values[0]==values[1]){
+          flipped+=2;
+          values=[];
+          div_ids=[];
+          if(flipped==elements.length){
+            alert("You finished the game!");
+          }
+        }else{
+          function wrongChoice(){
+            var div1=document.getElementById(div_ids[0]);
+            var div2=document.getElementById(div_ids[1]);
+            div1.style.backgroundColor='grey';
+            div1.style.backgroundImage=null;
+            div2.style.backgroundColor='grey';
+            div2.style.backgroundImage=null;
+            values=[];
+            div_ids=[];
+          }
+          setTimeout(wrongChoice,900);
+        }
+      }
+    }
+  }
+ // window.addEventListener(initGame());
+</script>
+
+</body>
+</html>

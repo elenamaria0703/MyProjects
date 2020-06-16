@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<select id="fruits" size=10px>
+	<option selected></option>
+  <option value="Pear" id="Pear">Pear</option>
+  <option value="Orange" id="Orange">Orange</option>
+  <option value="Apple" id="Apple">Apple</option>
+  <option value="Banana" id="Banana">Banana</option>
+  <option value="Melon" id="Melon">Melon</option>
+</select>
+
+<select id="vegetables" size=10px>
+	<option selected></option>
+  <option value="Carrots" id="Carrots">Carrots</option>
+  <option value="Cucumber" id="Cucumber">Cucumber</option>
+  <option value="Broccoli" id="Broccoli">Broccoli</option>
+  <option value="Lettuce" id="Lettuce">Lettuce</option>
+  <option value="Garlic" id="Garlic">Garlic</option>
+</select>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).on('dblclick','option', function(){
+    var o=document.createElement('option')
+    $(o).html($(this).html())
+    if($(this).parent().attr('id')=='fruits'){
+      $("#vegetables").append(o)
+    }
+    else{
+      $("#fruits").append(o)
+    }
+    $(this).remove()
+  });
+</script>
+</body>
+</html>
