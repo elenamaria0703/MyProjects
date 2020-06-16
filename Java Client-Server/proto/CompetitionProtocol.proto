@@ -1,0 +1,41 @@
+syntax="proto3";
+package comp.protocol;
+option java_package = "comp.network.protobuffprotocol";
+option java_outer_classname="CompetitionProtobufs";
+
+message User{
+    string username=1;
+    string password=2;
+}
+
+message SportEvent{
+    string name=1;
+}
+message Participant{
+    string name=1;
+    string age=2;
+    SportEvent firstEvent=3;
+    SportEvent secondEvent=4;
+    string nrEvents=5;
+}
+
+message CompetitionRequest {
+    enum Type {
+        Unknown = 0;
+        Login = 1;
+        Logout = 2;
+        AddParticipant = 3;
+        GetAll = 4;
+    }
+    Type type = 1;
+    User user = 2;
+    Participant participant = 3;
+}
+
+message Response{
+    enum Type{Unknown=0;Ok=1;Error=2;AddedParticipant=3;GetAll=4;}
+    Type type=1;
+    string error=2;
+    repeated Participant participants=3;
+    Participant participant=4;
+}
